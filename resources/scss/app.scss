@@ -1,0 +1,28 @@
+// Reset
+@import './partials/reset';
+
+// Fonts
+@import './partials/fonts';
+
+// Flex Classes
+@import './partials/flex';
+
+// General Rules
+body {
+    height: 100vh;
+    background-color: lightcoral;
+}
+
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    img {
+        width: 300px;
+        height: 300px;
+    }
+    h1 {
+        color: white;
+        margin: 50px 0;
+    }
+}
