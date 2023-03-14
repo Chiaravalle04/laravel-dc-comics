@@ -1,0 +1,39 @@
+// Home Page
+.welcome {
+    height: calc(100vh - 100px);
+    background: rgb(3,131,249);
+    background: linear-gradient(163deg, rgba(3,131,249,1) 0%, rgba(66,14,130,1) 50%);
+    .main-container {
+        height: 100%;
+        .welcome-text {
+            width: 70%;
+            h1 {
+                font-size: 35px;
+                color: $secondColor;
+                font-family: 'Rampart One', cursive;
+            }
+            p {
+                line-height: 20px;
+                margin: 40px 0;
+                color: $secondColor;
+            }
+            a {
+                display: inline-block;
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                line-height: 44px;
+                border: 2px solid $secondColor;
+                border-radius: 30px;
+                color: $secondColor;
+                font-weight: bold;
+                font-family: 'Rampart One', cursive;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background-color: $secondColor;
+                    color: $firstColor;
+                }
+            }
+        }
+    }
+}

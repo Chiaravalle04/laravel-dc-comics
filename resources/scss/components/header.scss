@@ -2,7 +2,7 @@
 header {
     height: 100px;
     padding: 10px;
-    // background-color: blue;
+    box-shadow: 0px 3px 7px 3px rgba(0,0,0,0.4);
     .main-container {
         height: 100%;
         .container-logo {
@@ -21,6 +21,7 @@ header {
                         padding: 15px;
                         font-weight: bold;
                         color: $firstColor;
+                        font-family: 'Rampart One', cursive;
                         transition: all 0.25s ease-in-out;
                         &:hover {
                             background-color: $firstColor;
@@ -41,6 +42,7 @@ header {
                 border-radius: 15px;
                 background-color: $firstColor;
                 color: $secondColor;
+                font-family: 'Rampart One', cursive;
                 font-weight: bold;
                 border-color: #add8e6;
                 cursor: pointer;
