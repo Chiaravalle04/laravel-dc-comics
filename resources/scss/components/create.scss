@@ -1,0 +1,63 @@
+// Create
+.d-block {
+    display: block;
+}
+
+.create {
+    padding: 50px 0;
+    .main-container {
+        h1 {
+            color: $firstColor;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: 'Rampart One', cursive;
+        }
+        .container-form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 15px;
+            border: 3px solid $firstColor;
+            background-color: $secondColor;
+            box-shadow: 0px 6px 10px 0 rgba(0,0,0,0.5);
+            form {
+                label {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                    color: $firstColor;
+                    font-weight: bold;
+                }
+                input, textarea {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border: 2px solid $firstColor;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                input {
+                    height: 40px;
+                    border-radius: 15px;
+                    
+                }
+                input[type=file] {
+                    padding: 8px 10px;
+                }
+                button {
+                    display: block;
+                    width: 100px;
+                    height: 40px;
+                    margin: 20px auto 0;
+                    border-radius: 15px;
+                    border: none;
+                    font-weight: bold;
+                    background-color: $firstColor;
+                    color: $secondColor;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
