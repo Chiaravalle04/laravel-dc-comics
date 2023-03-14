@@ -7,9 +7,15 @@
 // Flex Classes
 @import './partials/flex';
 
+// Variables
+@import './partials/variables';
+
 // Components
 // Header
 @import './components/header.scss';
+
+// Footer
+@import './components/footer.scss';
 
 // General Rules
 ul {

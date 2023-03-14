@@ -1,0 +1,60 @@
+// Footer
+footer {
+    background-color: $fourthColor;
+    .header-footer {
+        height: 100px;
+        padding: 10px;
+        .main-container {
+            height: 100%;
+            .container-logo {
+                height: 100%;
+                img {
+                    width: 80px;
+                }
+            }
+            .policy {
+                text-align: center;
+                a {
+                    display: block;
+                    color: $secondColor;
+                }
+                hr {
+                    margin: 5px 0
+                }
+                h5 {
+                    color: $secondColor;
+                }
+            }
+            form {
+                label {
+                    display: block;
+                    font-size: 20px;
+                    text-align: start;
+                    color: $firstColor;
+                    font-weight: bold;
+                }
+                input {
+                    width: 200px;
+                    height: 35px;
+                    margin-top: 10px;
+                    padding: 10px;
+                    border-radius: 15px 0 0 15px;
+                    border: 2px solid $firstColor;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                button {
+                    width: 80px;
+                    height: 35px;
+                    border-radius: 0 15px 15px 0;
+                    background-color: $firstColor;
+                    color: $secondColor;
+                    font-weight: bold;
+                    border: 2px solid $firstColor;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

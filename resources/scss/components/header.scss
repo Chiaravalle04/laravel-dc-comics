@@ -20,10 +20,10 @@ header {
                     a {
                         padding: 15px;
                         font-weight: bold;
-                        color: #0376F2;
+                        color: $firstColor;
                         transition: all 0.25s ease-in-out;
                         &:hover {
-                            background-color: #0376F2;
+                            background-color: $firstColor;
                             border-radius: 20px;
                             color: #fff;
                         }
@@ -39,8 +39,8 @@ header {
                 width: 100%;
                 height: 35px;
                 border-radius: 15px;
-                background-color: #0376F2;
-                color: white;
+                background-color: $firstColor;
+                color: $secondColor;
                 font-weight: bold;
                 border-color: #add8e6;
                 cursor: pointer;
