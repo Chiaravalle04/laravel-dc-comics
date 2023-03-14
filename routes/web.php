@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\Guest\PageController;
+// Controllers
+use App\Http\Controllers\Guest\ComicController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,10 @@ use App\Http\Controllers\Guest\PageController;
 |
 */
 
-Route::get('/', [PageController::class, 'index']);
+Route::get('/', function () {
+
+    return view('welcome');
+
+});
+
+Route::resource('comics', ComicController::class);
