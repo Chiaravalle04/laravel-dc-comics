@@ -5,17 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!--Favicon-->
-        <link rel="shortcut icon" type="image/png" href="{{ Vite::asset('resources/img/laravel.png') }}">
+        <link rel="shortcut icon" type="image/png" href="{{ Vite::asset('resources/img/favicon.png') }}">
 
-        <title>Laravel - Vite - Sass | Template </title>
+        <title>DC Comics</title>
 
         <!--Vite-->
         @vite('resources/js/app.js')
         
     </head>
-    <body class="d-flex jc-center ai-center">
+    <body>
+
+        @include('partials.header')
+
+        <main>
+
+            @yield('content')
+
+        </main>
        
-        @yield('content')
+        @include('partials.footer')
 
     </body>
 </html>

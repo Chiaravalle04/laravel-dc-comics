@@ -18,7 +18,9 @@ use App\Http\Controllers\Guest\ComicController;
 
 Route::get('/', function () {
 
-    return view('welcome');
+    $navBar = config('nav_bar');
+
+    return view('welcome', compact('navBar'));
 
 });
 
