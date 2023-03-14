@@ -17,9 +17,11 @@ class ComicController extends Controller
      */
     public function index()
     {
-        // $comics = Comic::all();
+        $navBar = config('nav_bar');
 
-        return view('comics.index');
+        $comics = Comic::all();
+
+        return view('comics.index', compact('navBar'), compact('comics'));
     }
 
     /**

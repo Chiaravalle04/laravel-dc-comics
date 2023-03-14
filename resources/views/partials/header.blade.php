@@ -4,7 +4,11 @@
 
         <div class="container-logo">
 
-            <img src="{{ Vite::asset('resources/img/logo.png') }}" alt="">
+            <a href="/">
+
+                <img src="{{ Vite::asset('resources/img/logo.png') }}" alt="">
+
+            </a>
 
         </div>
 

@@ -1,0 +1,47 @@
+// Index
+.shop {
+    min-height: calc(100vh - 80px);
+    .main-container {
+        height: 100%;
+        .container-comic {
+            height: 100%;
+            padding: 50px 0;
+            .comic {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: calc(100% / 4 - 20px);
+                height: 400px;
+                margin: 10px;
+                padding: 20px;
+                background-color: $fourthColor;
+                box-shadow: 0px 6px 10px 0 rgba(0,0,0,0.5);
+                h2 {
+                    color: $firstColor;
+                }
+                p {
+                    height: 100px;
+                    color: $secondColor;
+                    font-size: 13px;
+                    overflow: auto;
+                }
+                span {
+                    display: block;
+                    color: $firstColor;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                button {
+                    display: inline-block;
+                    height: 40px;
+                    border-radius: 20px;
+                    border: none;
+                    background-color: $firstColor;
+                    color: $secondColor;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
