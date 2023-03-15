@@ -1,0 +1,81 @@
+// Edit
+.d-block {
+    display: block;
+}
+
+.edit {
+    padding: 50px 0;
+    .main-container {
+        .home {
+            display: block;
+            width: 220px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 15px;
+            background-color: $firstColor;
+            color: $secondColor;
+            font-weight: bold;
+            box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.17);
+            cursor: pointer;
+        }
+        h1 {
+            color: $firstColor;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: 'Rampart One', cursive;
+        }
+        h2 {
+            color: $firstColor;
+            margin-bottom: 20px;
+            text-align: center;
+            text-decoration: underline;
+        }
+        .container-form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 15px;
+            border: 3px solid $firstColor;
+            background-color: $secondColor;
+            box-shadow: 0px 6px 10px 0 rgba(0,0,0,0.5);
+            form {
+                label {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                    color: $firstColor;
+                    font-weight: bold;
+                }
+                input, textarea {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border: 2px solid $firstColor;
+                    border-radius: 15px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                input {
+                    height: 40px;                    
+                }
+                input[type=file] {
+                    padding: 8px 10px;
+                }
+                button {
+                    display: block;
+                    width: 100px;
+                    height: 40px;
+                    margin: 20px auto 0;
+                    border-radius: 15px;
+                    border: none;
+                    font-weight: bold;
+                    background-color: $firstColor;
+                    color: $secondColor;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

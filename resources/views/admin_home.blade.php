@@ -40,7 +40,7 @@
                         <td>{{ $comic->type }}</td>
                         <td>
                             <a href="{{ route('comics.show', $comic->id) }}" class="blue"><i class="fa-solid fa-eye"></i></a>
-                            <a href="" class="green"><i class="fa-solid fa-pencil"></i></a>
+                            <a href="{{ route('comics.edit', $comic->id) }}" class="green"><i class="fa-solid fa-pencil"></i></a>
                             <a href="" class="red"><i class="fa-solid fa-trash-can"></i></a>
                         </td>
 

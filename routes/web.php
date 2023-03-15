@@ -19,7 +19,7 @@ use App\Models\Comic;
 |
 */
 
-// Homepage
+// Home page
 Route::get('/', function () {
 
     $navBar = config('nav_bar');
@@ -37,7 +37,7 @@ Route::get('/login', function () {
 
 })->name('login');
 
-// Admin Homepage
+// Admin Home page
 Route::get('/admin', function () {
 
     $comics = Comic::all();
