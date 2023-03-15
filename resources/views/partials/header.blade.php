@@ -32,7 +32,7 @@
         
         <div class="btn-login">
 
-            <button>LOGIN</button>
+            <a href="{{ route('login') }}">LOGIN</a>
 
         </div>
 

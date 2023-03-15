@@ -1,0 +1,55 @@
+// Admin Home page
+.admin-home-container {
+    min-height: 100vh;
+    .main-container {
+        h1 {
+            font-family: 'Rampart One', cursive;
+            color: $firstColor;
+            margin: 15px 0;
+        }
+        .home {
+            display: block;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 15px;
+            background-color: $firstColor;
+            color: $secondColor;
+            font-weight: bold;
+            box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.17);
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            font-size: 14px;
+            thead th {
+                background-color: $firstColor;
+                font-weight: bold;
+                color: $secondColor;
+                padding: 10px;
+            }
+            td, th {
+                text-align: center;
+                padding: 10px;
+                border-bottom: 2px solid $firstColor;
+            }
+            a {
+                display: inline-block;
+                font-size: 20px;
+                margin: 0 10px;
+            }
+            .blue {
+                color: $firstColor;
+            }
+            .green {
+                color: green;
+            }
+            .red {
+                color: red
+            }
+        }
+    }
+}

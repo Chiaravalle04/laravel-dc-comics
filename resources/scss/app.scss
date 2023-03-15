@@ -1,16 +1,22 @@
-// Reset
+// ----- Reset -----
 @import './partials/reset';
 
-// Fonts
+// ----- Fonts -----
 @import './partials/fonts';
 
-// Flex Classes
+//  ----- Flex Classes ----- 
 @import './partials/flex';
 
-// Variables
+//  ----- Variables ----- 
 @import './partials/variables';
 
-// Components
+//  ----- Components ----- 
+// Login
+@import './components/login.scss';
+
+// Admin Home page
+@import './components/admin-home.scss';
+
 // Header
 @import './components/header.scss';
 

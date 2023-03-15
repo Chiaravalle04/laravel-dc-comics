@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Route;
 // Controllers
 use App\Http\Controllers\Guest\ComicController;
 
+// Models
+use App\Models\Comic;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +19,7 @@ use App\Http\Controllers\Guest\ComicController;
 |
 */
 
+// Homepage
 Route::get('/', function () {
 
     $navBar = config('nav_bar');
@@ -24,4 +28,23 @@ Route::get('/', function () {
 
 });
 
+// Login
+Route::get('/login', function () {
+
+    $navBar = config('nav_bar');
+
+    return view('login', compact('navBar'));
+
+})->name('login');
+
+// Admin Homepage
+Route::get('/admin', function () {
+
+    $comics = Comic::all();
+
+    return view('admin_home', compact('comics'));
+
+})->name('admin_home');
+
+// Resources
 Route::resource('comics', ComicController::class);
