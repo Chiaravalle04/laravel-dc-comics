@@ -72,7 +72,7 @@
 
                     @method('DELETE')
 
-                    <button class="delete">CANCELLA</button>
+                    <button class="delete">ELIMINA</button>
 
                 </form>
 
