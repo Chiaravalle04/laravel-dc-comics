@@ -19,17 +19,16 @@
                 h2 {
                     color: $firstColor;
                 }
-                p {
-                    height: 100px;
-                    color: $secondColor;
-                    font-size: 13px;
-                    overflow: auto;
-                }
                 span {
                     display: block;
                     color: $firstColor;
                     text-transform: uppercase;
                     font-weight: bold;
+                }
+                a {
+                    color: $secondColor;
+                    padding: 5px;
+                    border-bottom: 1px solid $secondColor;
                 }
                 button {
                     display: inline-block;

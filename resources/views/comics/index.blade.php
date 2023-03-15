@@ -14,11 +14,11 @@
 
                     <h2>{{ $comic->title }}</h2>
 
-                    <p>{{ $comic->description }}</p>
-
                     <span>{{ $comic->type }}</span>
 
                     <span>$ {{ $comic->price }}</span>
+
+                    <a href="{{ route('comics.show', $comic->id) }}">Vedi maggiori dettagli <i class="fa-solid fa-arrow-right-long"></i></a>
 
                     <button>Acquista</button>
 

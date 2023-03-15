@@ -1,0 +1,42 @@
+// Show
+.show{
+    min-height: calc(100vh - 80px);
+    padding: 50px 0;
+    .main-container {
+        h1 {
+            font-family: 'Rampart One', cursive;
+            color: $firstColor;
+            margin: 20px 0;
+        }
+        b {
+            font-family: 'Rampart One', cursive;
+            color: $firstColor;
+        }
+        p {
+            margin: 15px 0;
+            font-weight: 500;
+        }
+        span {
+            text-transform: uppercase;
+        }
+        a, button {
+            display: inline-block;
+            background-color: $firstColor;
+            color: $secondColor;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        a {
+            width: 170px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+        button {
+            width: 150px;
+            height: 40px;
+            cursor: pointer;
+            border: none;
+        }
+    }
+}

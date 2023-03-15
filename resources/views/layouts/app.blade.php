@@ -7,6 +7,9 @@
         <!--Favicon-->
         <link rel="shortcut icon" type="image/png" href="{{ Vite::asset('resources/img/logo.png') }}">
 
+        <!--Fontawesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <title>DC Comics</title>
 
         <!--Vite-->

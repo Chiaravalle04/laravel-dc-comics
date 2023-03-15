@@ -28,7 +28,7 @@
     
                     <label class="d-block" for="price">Prezzo*</label>
     
-                    <input class="d-block" type="number" name="price" id="price" min="0" max="30000" required>
+                    <input class="d-block" type="number" name="price" id="price" min="0" max="30000" step="0.01" required>
     
                     <label class="d-block" for="series">Serie</label>
     
@@ -41,6 +41,8 @@
                     <label class="d-block" for="type">Tipo*</label>
     
                     <input class="d-block" type="text" name="type" id="type" placeholder="Tipo..." required>
+
+                    <p>* : campi <b>obbligatori</b> </p>
     
                     <button>Vendi</button>
     

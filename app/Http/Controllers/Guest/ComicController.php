@@ -70,7 +70,11 @@ class ComicController extends Controller
      */
     public function show($id)
     {
-        return view('comics.show');
+        $comic = Comic::findOrFail($id);
+
+        $navBar = config('nav_bar');
+
+        return view('comics.show', compact('comic'), compact('navBar'));
     }
 
     /**
