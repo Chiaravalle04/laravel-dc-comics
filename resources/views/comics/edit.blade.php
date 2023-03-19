@@ -20,9 +20,13 @@
 
                     @method('PUT')
 
-                    <label class="d-block" for="title">Modifica il titolo*</label>
+                    <label class="d-block @error('title') text-error @enderror" for="title">Modifica il titolo*</label>
 
-                    <input class="d-block" type="text" name="title" id="title" maxlength="255" placeholder="Titolo..." required value="{{ $comic->title }}">
+                    <input class="d-block @error('title') border-error @enderror" type="text" name="title" id="title" maxlength="255" placeholder="Titolo..." required value="{{ $comic->title }}">
+
+                    @error('title')
+                        <div class="error">{{ $message }}</div>
+                    @enderror
 
                     <label class="d-block" for="description">Modifica la descrizione</label>
 
@@ -32,21 +36,33 @@
 
                     <input type="file" name="thumb" id="thumb">
 
-                    <label class="d-block" for="price">Prezzo*</label>
+                    <label class="d-block @error('price') text-error @enderror" for="price">Prezzo*</label>
 
-                    <input class="d-block" type="number" name="price" id="price" min="0" max="30000" step="0.01" required value="{{ $comic->price }}">
+                    <input class="d-block @error('price') border-error @enderror" type="number" name="price" id="price" min="0" max="30000" step="0.01" required value="{{ $comic->price }}">
+
+                    @error('price')
+                        <div class="error">{{ $message }}</div>
+                    @enderror
 
                     <label class="d-block" for="series">Serie</label>
 
                     <input class="d-block" type="text" name="series" id="series" placeholder="Serie..." value="{{ $comic->series }}">
 
-                    <label class="d-block" for="sale_date">Modifica data di vendita*</label>
+                    <label class="d-block @error('sale_date') text-error @enderror" for="sale_date">Modifica data di vendita*</label>
 
-                    <input class="d-block" type="date" name="sale_date" id="sale_date" required value="{{ $comic->sale_date }}">
+                    <input class="d-block @error('sale_date') text-error @enderror" type="date" name="sale_date" id="sale_date" required value="{{ $comic->sale_date }}">
 
-                    <label class="d-block" for="type">Tipo*</label>
+                    @error('sale_date')
+                        <div class="error">{{ $message }}</div>
+                    @enderror
 
-                    <input class="d-block" type="text" name="type" id="type" placeholder="Tipo..." required value="{{ $comic->type }}">
+                    <label class="d-block @error('type') text-error @enderror" for="type">Tipo*</label>
+
+                    <input class="d-block @error('type') text-error @enderror" type="text" name="type" id="type" placeholder="Tipo..." required value="{{ $comic->type }}">
+
+                    @error('type')
+                        <div class="error">{{ $message }}</div>
+                    @enderror
 
                     <p>* : campi <b>obbligatori</b> </p>
 

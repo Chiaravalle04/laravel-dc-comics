@@ -1,0 +1,17 @@
+// Form Error
+.error {
+    width: 100%;
+    height: 50px;
+    line-height: 40px;
+    padding: 0 10px;
+    color: red;
+    font-weight: bold;
+}
+
+.text-error {
+    color: red !important;
+}
+
+.border-error {
+    border: 2px solid red !important;
+}
