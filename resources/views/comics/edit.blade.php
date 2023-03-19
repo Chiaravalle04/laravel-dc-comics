@@ -50,7 +50,7 @@
 
                     <label class="d-block @error('sale_date') text-error @enderror" for="sale_date">Modifica data di vendita*</label>
 
-                    <input class="d-block @error('sale_date') text-error @enderror" type="date" name="sale_date" id="sale_date" required value="{{ $comic->sale_date }}">
+                    <input class="d-block @error('sale_date') border-error @enderror" type="date" name="sale_date" id="sale_date" required value="{{ $comic->sale_date }}">
 
                     @error('sale_date')
                         <div class="error">{{ $message }}</div>
@@ -58,7 +58,7 @@
 
                     <label class="d-block @error('type') text-error @enderror" for="type">Tipo*</label>
 
-                    <input class="d-block @error('type') text-error @enderror" type="text" name="type" id="type" placeholder="Tipo..." required value="{{ $comic->type }}">
+                    <input class="d-block @error('type') border-error @enderror" type="text" name="type" id="type" placeholder="Tipo..." required value="{{ $comic->type }}">
 
                     @error('type')
                         <div class="error">{{ $message }}</div>
